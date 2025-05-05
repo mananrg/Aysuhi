@@ -161,7 +161,7 @@ elif app_mode == "Face Recognition":
             st_status = st.empty()
 
             face_data = []
-            cap = cv2.VideoCapture(0)
+            cap = cv2.VideoCapture(2)
 
             # Collect samples
             for i in range(30):  # Collect 30 samples
