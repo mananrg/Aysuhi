@@ -9,24 +9,6 @@ from transformers import pipeline
 from PIL import Image
 import tempfile
 
-
-# Check if running on Streamlit Cloud
-is_streamlit_cloud = st.secrets.get("is_streamlit_cloud", False)
-
-# If not explicitly set, try to detect based on environment
-if not is_streamlit_cloud and "STREAMLIT_SHARING" in os.environ:
-    is_streamlit_cloud = True
-
-# Modify app behavior based on deployment
-if is_streamlit_cloud:
-    # Disable webcam functionality with a notification
-    st.warning(
-        "⚠️ Webcam functionality is not available in cloud deployment. Please use file upload instead."
-    )
-    use_webcam = False
-else:
-    # Local deployment can use webcam
-    use_webcam = True
 # Page configuration
 st.set_page_config(page_title="Multi-Function AI App", page_icon="🧠", layout="wide")
 
