@@ -127,17 +127,17 @@ if app_mode == "Home":
     col1, col2, col3 = st.columns(3)
     with col1:
         st.image(
-            "https://media.istockphoto.com/id/1341619309/photo/facial-recognition-system-concept.jpg?s=612x612&w=0&k=20&c=p8Ym8PwXJMpYdJnP9_9x5oBY5GMC1jwhLNEeVhaF2AI=",
+            "https://cdn.prod.website-files.com/66cd2cbca244787c4d744cc5/67362473a7b512c05960969b_OMY%20(1).jpeg",
             caption="Face Recognition",
         )
     with col2:
         st.image(
-            "https://t4.ftcdn.net/jpg/03/56/17/75/360_F_356177598_4G1MIcLllK5xQ9jbJ2DXiTS7iUgAlGGV.jpg",
+            "https://raw.githubusercontent.com/serengil/deepface/master/icon/deepface-icon-labeled.png",
             caption="Face Analysis",
         )
     with col3:
         st.image(
-            "https://cdn.pixabay.com/photo/2016/09/10/17/18/book-1659717_1280.jpg",
+            "https://miro.medium.com/v2/resize:fit:1064/1*GIVviyN9Q0cqObcy-q-juQ.png",
             caption="Text Summarization",
         )
 
